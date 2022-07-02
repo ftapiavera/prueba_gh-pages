@@ -1,0 +1,27 @@
+<div class="font">
+    <div align ="center" class="container-fluid">
+        <a class="navbar-brand" routerLink="/portada">
+        <img class="img-fluid logo" src="assets/logo1.png">
+        </a>
+        <div class="menu">
+            <div>
+                <h2>Consultas</h2>
+            </div>
+            <div>
+                <button routerLink="/realizarConsulta" >Realizar consulta</button>
+            </div>
+            <div>
+                <button routerLink="#" >Historial de consultas</button>
+            </div>
+            <div>
+                <h4>Preguntas frecuentes</h4>
+            </div>
+            <div>
+                <a  *ngFor="let consulta of preguntas">
+                   <h5>{{consulta.pregunta}}</h5>
+                    <h6>{{consulta.respuesta}}</h6></a>
+            </div>
+        </div>
+    </div>
+<div>
+<app-nav-bar></app-nav-bar>
